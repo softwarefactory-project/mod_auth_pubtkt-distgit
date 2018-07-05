@@ -2,4 +2,4 @@
 host=softwarefactory-project.io
 port=29418
 project=software-factory/mod_auth_pubtkt-distgit
-defaultbranch=master
+defaultbranch=3.1
