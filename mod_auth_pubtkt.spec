@@ -2,7 +2,7 @@
 %{!?_httpd_moddir: %{expand: %%global _httpd_moddir %%{_libdir}/httpd/modules}}
 
 Name:           mod_auth_pubtkt
-Version:        0.10
+Version:        0.13
 Release:        1%{?dist}
 Summary:        A pragmatic Web Single Sign-On (SSO) solution
 
@@ -41,5 +41,8 @@ install -p -D -m 0755 src/.libs/mod_auth_pubtkt.so %{buildroot}%{_httpd_moddir}/
 
 
 %changelog
+* Fri May 10 2019 Matthieu Huin <mhuin@redhat.com> - 0.13-1
+- Update version
+
 * Fri Feb 17 2017 Tristan Cacqueray <tdecacqu@redhat.com> - 0.10-1
 - Initial packaging
